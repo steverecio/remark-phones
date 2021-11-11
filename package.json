@@ -1,0 +1,23 @@
+{
+  "name": "remark-phones",
+  "version": "1.0.0",
+  "description": "remark plugin to urlize phone numbers",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test-api": "node --conditions development test/index.js",
+    "test": "npm run test-api"
+  },
+  "keywords": [],
+  "author": "Steve Recio (http://steverecio.com)",
+  "license": "MIT",
+  "dependencies": {
+    "libphonenumber-js": "^1.9.42",
+    "unist-util-visit": "^4.1.0"
+  },
+  "devDependencies": {
+    "remark": "^14.0.1",
+    "remark-cli": "^10.0.0",
+    "tape": "^5.3.1"
+  }
+}
