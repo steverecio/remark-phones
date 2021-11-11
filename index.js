@@ -12,7 +12,7 @@ export default function remarkPhones(options = {}) {
             const matches = findPhoneNumbersInText(value, country);
             for (const match of matches) {
                 const original = value.slice(match.startsAt, match.endsAt);
-                const formattedNumber = `[${original}](${match.number.getURI()})`;
+                const formattedNumber = `<a href="${match.number.getURI()}">${original}</a>`;
                 slices.push(value.slice(position, match.startsAt));
                 slices.push(formattedNumber);
                 position = match.endsAt;
