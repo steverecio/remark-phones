@@ -21,8 +21,6 @@ export default function remarkPhones(options = {}) {
             if (slices.length > 0) {
                 slices.push(value.slice(position));
                 const final = slices.join('');
-                console.log(slices);
-                console.log(final);
                 node.value = final;
             }
           })
